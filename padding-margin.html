@@ -1,0 +1,65 @@
+<!-- 
+    File: padding-margin.html
+
+    Description:
+    This HTML file demonstrates the usage of custom padding and margin utilities with Tailwind CSS.
+    - The <button> element uses custom classes: 'p-custom-padding-only' and 'm-custom-margin-only'.
+    - Tailwind CSS is included via './src/css/output.css'.
+    - The layout centers the content both vertically and horizontally using Flexbox utilities.
+
+    Usage:
+    1. Ensure Tailwind CSS is built and available at './src/css/output.css'.
+    2. Define the custom classes 'p-custom-padding-only' and 'm-custom-margin-only' in your Tailwind config or CSS.
+    3. Open this file in a browser to view the styled button.
+
+    Example custom class definitions (in your CSS or Tailwind config):
+        .p-custom-padding-only { padding: 1.5rem 2rem; }
+        .m-custom-margin-only { margin: 1rem 0.5rem; }
+
+    Component Descriptions:
+
+    1. <link rel="stylesheet" href="./src/css/output.css"/>
+       - Includes the compiled Tailwind CSS file for utility classes and custom styles.
+
+    2. <body class="flex items-center justify-center min-h-screen bg-white">
+       - Sets up a flex container that centers its content both vertically and horizontally.
+       - Applies a minimum height to fill the viewport and sets a white background.
+
+    3. <div class="bg-orange-100">
+       - Provides a light orange background for the button container.
+
+    4. <button class="border bg-gray-100 p-custom-padding-only m-custom-margin-only">
+       - Renders a button with a border and light gray background.
+       - Uses custom padding and margin classes for spacing.
+       - Displays the text "Sign In".
+
+    Class Descriptions:
+
+    - flex: Enables Flexbox layout on the element.
+    - items-center: Vertically centers items in a flex container.
+    - justify-center: Horizontally centers items in a flex container.
+    - min-h-screen: Sets the minimum height to 100% of the viewport.
+    - bg-white: Applies a white background color.
+    - bg-orange-100: Applies a light orange background color.
+    - border: Adds a border to the element.
+    - bg-gray-100: Applies a light gray background color.
+    - p-custom-padding-only: Custom class for specific padding (e.g., padding: 1.5rem 2rem;).
+    - m-custom-margin-only: Custom class for specific margin (e.g., margin: 1rem 0.5rem;).
+-->
+    
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Tailwind</title>
+    <link rel="stylesheet" href="./src/css/output.css"/>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-white">
+    <div class="bg-orange-100">
+        <button class="border bg-gray-100 p-custom-padding-only m-custom-margin-only">
+            Sign In
+        </button>
+    </div>
+</body>
+</html>
